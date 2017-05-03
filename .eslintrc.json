@@ -1,0 +1,28 @@
+// by default, eslint will look for configuration folders in parent folders
+// all the way up to the root folder,
+// that's why we use root: true, to stop right here and avoid weird behaviors
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "rules": {
+        // 0 - Off
+        // 1 - Warning
+        // 2 - Error
+        "no-debugger": 1,
+        "no-console": 1,
+        "no-unused-vars": 1
+    }
+}
